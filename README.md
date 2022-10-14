@@ -3,6 +3,7 @@
 Integrantes:
 
 Diego Di Stefano
-<br>Ariel Pereira
+
+Ariel Pereira
 
 Pablo Nicolas Guala

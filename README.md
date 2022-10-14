@@ -3,3 +3,4 @@
 Integrantes:
 
 Diego Di Stefano
+Ariel Pereira

@@ -7,3 +7,5 @@ Diego Di Stefano
 Ariel Pereira
 
 Pablo Nicolas Guala
+
+Nathalie Di Stefano

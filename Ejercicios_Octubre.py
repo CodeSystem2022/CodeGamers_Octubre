@@ -37,6 +37,25 @@ rectangulo3 = Rectangulo(altura3, base3)
 print(f'El area del tercer rectangulo es: {rectangulo3.calcular_area()}')
 
 
+
+
+# Di Stefano Mara
+
+
+# Creamos la funcion
+def calcular_total_pago(pago_sin_impuesto, impuesto):
+    pago_total = pago_sin_impuesto + pago_sin_impuesto * (impuesto/100)
+    return pago_total
+
+# Ejecutamos la funcion
+pago_sin_impuesto = float(input("Ingrese el monto sin impuesto: "))
+impuesto = float(input("Ingrese el monto del impuesto: "))
+pago_con_impuesto = calcular_total_pago(pago_sin_impuesto, impuesto)
+print(f"Monto con impuestos TOTAL: {pago_con_impuesto}")
+
+
+
+
 # Di Stefano Diego
 
 class Cubo:

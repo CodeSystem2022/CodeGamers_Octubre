@@ -69,6 +69,6 @@ public class Ciclos11 {
         for(int i = 1; i<=20;i+=2){
             producto *= i;
         }
-    JOptionPane.showMessageDialog(null, "El producto de los números impares es: ");
+    JOptionPane.showMessageDialog(null, "El producto de los números impares es: "+producto);
     }
 }

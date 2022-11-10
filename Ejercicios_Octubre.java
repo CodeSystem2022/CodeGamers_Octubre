@@ -74,6 +74,8 @@ public class Ciclos11 {
 }
 
 
+
+
 /*
 Gastón Exequiel Garay
 
@@ -97,5 +99,88 @@ public class Ciclos12 {
         }
         //System.out.println("\nEl factorial del número ingresado es: "+factorial);
         JOptionPane.showMessageDialog(null, "el factorial del número ingresado es: "+factorial);
+    }
+}
+
+/*
+Gastón Exequiel Garay
+Encapsulamiento 
+package dominio
+Class Persona
+*/
+package dominio;
+
+public class Persona {
+    //Atributos
+    private String nombre;
+    private double sueldo;
+    private boolean eliminado;
+    
+    //Constructor
+    public Persona(String nombre, double sueldo, boolean eliminado){
+        this.nombre = nombre;
+        this.sueldo = sueldo;
+        this.eliminado = eliminado;
+     }
+//get&set
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getSueldo() {
+        return sueldo;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    public boolean isEliminado() {
+        return eliminado;
+    }
+
+    public void setEliminado(boolean eliminado) {
+        this.eliminado = eliminado;
+    }
+    
+    public String toString(){ //Convierte en una cadena cada atributo
+        return "Persona [nombre: "+this.nombre+
+                ", sueldo: "+this.sueldo+
+                ", eliminado: "+this.eliminado+"]";
+    }
+}
+
+
+/*
+Gastón Exequiel Garay
+Encapsulamiento 
+packege test
+Class PersonaPrueba
+*/
+package test;
+
+import dominio.Persona;
+
+public class PersonaPrueba {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona("Osvaldo", 57.000, false);
+        System.out.println("persona1 = " + persona1);
+        System.out.println("persona1 su nombre es: "+persona1.getNombre());
+        //Modificamos a travé s de los métodos
+        persona1.setNombre("Juan Ignacio");
+        //persona1.nombre ="Juan Ignacio"; //Ya no se puede utilizar
+        //System.out.println("Nombre es: "+persona1.nombre); //Error
+        System.out.println("persona1 con su nombre modificado: "+persona1.getNombre());
+        System.out.println("persona1 el resultado para el sueldo: "+persona1.getSueldo());
+        System.out.println("persona1 para obtener el booleano: "+persona1.isEliminado());
+        //Tarea: Crear otro objeto de tipo Persona, asignar valores de manera inicial
+        //e imprimir, luego modificar sus valores y volver a imprimir.
+        
+        //System.out.println("persona1: "+persona1.toString()); No hace falta llamar al toString
+        System.out.println("persona1 = " + persona1);
     }
 }

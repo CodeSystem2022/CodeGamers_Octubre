@@ -33,6 +33,20 @@ public class Ejercicio12 {
 
 import javax.swing.JOptionPane;
 
+public class Ejercicio12 {
+    public static void main(String[] args) {
+         long factorial = 1;
+        
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        
+        for(int i=1; i<=numero; i++) {
+            factorial *=i;
+        }
+        JOptionPane.showMessageDialog(null, "\nEl factorial del numero ingresado es: "+factorial);
+    }
+}
+
+
 
 
 
@@ -56,20 +70,5 @@ public class Ciclos11 {
             producto *= i;
         }
     JOptionPane.showMessageDialog(null, "El producto de los números impares es: ");
-    }
-}
-
-
-
-public class Ejercicio12 {
-    public static void main(String[] args) {
-         long factorial = 1;
-        
-        int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
-        
-        for(int i=1; i<=numero; i++) {
-            factorial *=i;
-        }
-        JOptionPane.showMessageDialog(null, "\nEl factorial del numero ingresado es: "+factorial);
     }
 }
